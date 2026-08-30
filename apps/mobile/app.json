@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "Mengo",
+    "slug": "mengo",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": { "resizeMode": "contain", "backgroundColor": "#FFF8F0" },
+    "android": { "package": "com.example.mengo.local" },
+    "ios": { "bundleIdentifier": "com.example.mengo.local" }
+  }
+}

@@ -1,0 +1,20 @@
+# local secrets, environments, generated state
+.env
+.env.*
+!.env.example
+node_modules/
+.next/
+out/
+.expo/
+dist/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.db
+*.sqlite
+*.sqlite3
+.pytest_cache/
+coverage/
+*.tsbuildinfo

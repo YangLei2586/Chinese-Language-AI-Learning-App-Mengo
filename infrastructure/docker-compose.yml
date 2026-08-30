@@ -1,0 +1,16 @@
+services:
+  api:
+    build:
+      context: ../apps/api
+    ports:
+      - "8000:8000"
+    environment:
+      MENGO_APP_ENV: local
+      MENGO_DEMO_MODE: "true"
+      MENGO_DATABASE_URL: sqlite:////data/mengo.db
+      MENGO_AI_PROVIDER_MODE: mock
+      MENGO_CORS_ORIGINS: http://localhost:3000,http://127.0.0.1:3000,http://localhost:8081,http://127.0.0.1:8081
+    volumes:
+      - mengo_sqlite:/data
+volumes:
+  mengo_sqlite:
